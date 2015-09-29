@@ -1,0 +1,30 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Login</title>
+</h:head>
+<h:body>
+	<h:form>
+	<p:menubar label="Data"  >
+				<p:menuitem><h:graphicImage library="images" name="mkt.png" width="150" height="80" url="home.xhtml" /></p:menuitem>
+				<p:menuitem value="Minha Conta" url="conta.xhtml"></p:menuitem>
+				<p:menuitem value="Enviar SMS" url="envio.xhtml" ></p:menuitem>
+				<p:menuitem value="Logout" url="home.xhtml" style="position: absolute; right: 6px;"></p:menuitem>
+	</p:menubar>
+		<h:panelGrid columns="2">
+			<h:outputLabel value="Usuário: "/>
+			<h:inputText maxlength="20" size="20"/>
+			
+			<h:outputLabel value="Senha: "/>
+			<h:inputSecret maxlength="10" size="20"/>
+			
+		</h:panelGrid>
+		
+		<h:commandButton value="Entrar"/>
+		<h:commandButton value="Esqueci minha senha"/>
+	</h:form>
+</h:body>
+</html>
+
